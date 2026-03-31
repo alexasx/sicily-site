@@ -270,20 +270,30 @@ main {
       linear-gradient(
         180deg,
         rgba(11, 7, 5, 0.96) 0%,
-        rgba(11, 7, 5, 0.74) 8%,
-        rgba(11, 7, 5, 0.18) 18%,
-        rgba(11, 7, 5, 0.14) 36%,
-        rgba(11, 7, 5, 0.62) 76%,
+        rgba(11, 7, 5, 0.7) 10%,
+        rgba(11, 7, 5, 0.18) 22%,
+        rgba(11, 7, 5, 0.1) 42%,
+        rgba(11, 7, 5, 0.58) 78%,
         rgba(11, 7, 5, 0.96) 100%
       ),
-      radial-gradient(circle at 50% 10%, rgba(216, 169, 95, 0.1), transparent 18%),
-      radial-gradient(circle at center bottom, rgba(92, 45, 18, 0.16), transparent 24%),
-      url("./assets/hero-quote.png") center 13% / 108% auto no-repeat,
+      linear-gradient(
+        90deg,
+        rgba(11, 7, 5, 0.82) 0%,
+        rgba(11, 7, 5, 0.22) 15%,
+        rgba(11, 7, 5, 0.06) 50%,
+        rgba(11, 7, 5, 0.22) 85%,
+        rgba(11, 7, 5, 0.82) 100%
+      ),
+      radial-gradient(circle at 50% 12%, rgba(216, 169, 95, 0.1), transparent 18%),
+      radial-gradient(circle at center bottom, rgba(92, 45, 18, 0.14), transparent 22%),
+      url("./assets/hero-quote.png") center 18% / 112% auto no-repeat,
       linear-gradient(180deg, #1b120d 0%, #110b08 100%);
   }
 
   body::before {
-    opacity: 0.16;
+    background: radial-gradient(circle at center 36%, transparent 24%, rgba(5, 3, 2, 0.38) 100%);
+    mix-blend-mode: normal;
+    opacity: 0.38;
   }
 
   .page-shell {
@@ -299,9 +309,9 @@ main {
   .hero-card {
     min-height: 0;
     height: 100%;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 12px;
-    padding: clamp(96px, 18svh, 132px) 10px 0;
+    padding: 28px 10px 0;
   }
 
   .hero-card::before {
@@ -333,7 +343,7 @@ main {
   }
 
   .hero-copy {
-    transform: translateY(8px);
+    transform: translateY(0);
   }
 
   .discord-float {
