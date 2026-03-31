@@ -260,11 +260,15 @@ main {
 @media (max-width: 640px) {
   body {
     background:
-      radial-gradient(circle at 50% 12%, rgba(216, 169, 95, 0.18), transparent 18%),
-      radial-gradient(circle at center bottom, rgba(92, 45, 18, 0.22), transparent 28%),
-      linear-gradient(180deg, rgba(11, 7, 5, 0.42), rgba(11, 7, 5, 0.88)),
-      url("./assets/hero-quote.png") 52% center / auto 100% no-repeat,
+      radial-gradient(circle at 50% 12%, rgba(216, 169, 95, 0.14), transparent 20%),
+      radial-gradient(circle at center bottom, rgba(92, 45, 18, 0.16), transparent 30%),
+      linear-gradient(180deg, rgba(11, 7, 5, 0.24), rgba(11, 7, 5, 0.66)),
+      url("./assets/hero-quote.png") 52% center / auto 96% no-repeat,
       linear-gradient(180deg, #1b120d 0%, #110b08 100%);
+  }
+
+  body::before {
+    opacity: 0.24;
   }
 
   .page-shell {
@@ -280,6 +284,7 @@ main {
     inset: 14% 4%;
     border-radius: 50%;
     filter: blur(14px);
+    opacity: 0.48;
   }
 
   .avatar-corner {
