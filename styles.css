@@ -258,6 +258,13 @@ main {
 }
 
 @media (max-width: 640px) {
+  html,
+  body {
+    height: 100svh;
+    min-height: 100svh;
+    overflow: hidden;
+  }
+
   body {
     background:
       radial-gradient(circle at 50% 12%, rgba(216, 169, 95, 0.14), transparent 20%),
@@ -272,40 +279,48 @@ main {
   }
 
   .page-shell {
-    padding: 16px 14px calc(94px + env(safe-area-inset-bottom));
+    min-height: 100svh;
+    height: 100svh;
+    padding: 14px 12px calc(88px + env(safe-area-inset-bottom));
+  }
+
+  main {
+    height: 100%;
   }
 
   .hero-card {
-    min-height: calc(100vh - 32px);
-    padding: 26px 10px 110px;
+    min-height: 0;
+    height: 100%;
+    gap: 12px;
+    padding: 16px 10px 0;
   }
 
   .hero-card::before {
-    inset: 14% 4%;
+    inset: 16% 4%;
     border-radius: 50%;
     filter: blur(14px);
     opacity: 0.48;
   }
 
   .avatar-corner {
-    width: 106px;
-    margin-bottom: 22px;
-  }
-
-  .hero-kicker {
-    font-size: 0.67rem;
+    width: 94px;
     margin-bottom: 10px;
   }
 
+  .hero-kicker {
+    font-size: 0.62rem;
+    margin-bottom: 8px;
+  }
+
   .hero-copy h1 {
-    font-size: clamp(2.8rem, 17vw, 4.8rem);
+    font-size: clamp(2.45rem, 15vw, 4.2rem);
     letter-spacing: 0.03em;
   }
 
   .hero-copy p {
     max-width: 12rem;
-    margin-top: 14px;
-    font-size: 1.02rem;
+    margin-top: 10px;
+    font-size: 0.96rem;
   }
 
   .discord-float {
@@ -314,5 +329,21 @@ main {
     bottom: calc(12px + env(safe-area-inset-bottom));
     min-width: 0;
     justify-content: center;
+    padding: 10px 14px 10px 10px;
+  }
+
+  .discord-float__icon {
+    width: 44px;
+    height: 44px;
+    flex-basis: 44px;
+  }
+
+  .discord-float__icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .discord-float__copy strong {
+    font-size: 0.96rem;
   }
 }
