@@ -278,7 +278,7 @@ main {
       ),
       radial-gradient(circle at 50% 10%, rgba(216, 169, 95, 0.1), transparent 18%),
       radial-gradient(circle at center bottom, rgba(92, 45, 18, 0.16), transparent 24%),
-      url("./assets/hero-quote.png") center 9% / 108% auto no-repeat,
+      url("./assets/hero-quote.png") center 13% / 108% auto no-repeat,
       linear-gradient(180deg, #1b120d 0%, #110b08 100%);
   }
 
@@ -301,7 +301,7 @@ main {
     height: 100%;
     justify-content: flex-start;
     gap: 12px;
-    padding: clamp(78px, 15svh, 112px) 10px 0;
+    padding: clamp(96px, 18svh, 132px) 10px 0;
   }
 
   .hero-card::before {
@@ -333,7 +333,7 @@ main {
   }
 
   .hero-copy {
-    transform: translateY(-4px);
+    transform: translateY(8px);
   }
 
   .discord-float {
